@@ -41,6 +41,7 @@ namespace C0732156_Assignment4
                 file.Close();
                 counter = File.ReadLines("").Count();
                 Console.WriteLine("Number of lines are " + counter);
+                
             }
         }
         public int FindNumberOfBlankSpaces(string line)
