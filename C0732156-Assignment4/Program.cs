@@ -15,6 +15,8 @@ namespace C0732156_Assignment4
         {
             Program p = new Program();
             p.Beowulf = new ArrayList();
+            p.ReadTextFiles();
+            Console.ReadLine();
 
         }
         public void Run() { this.ReadTextFiles(); }
@@ -32,7 +34,8 @@ namespace C0732156_Assignment4
                     Beowulf.Add(ln);
                 }
                 file.Close();
-                Console.WriteLine($"File has {counter} lines.");
+                counter = File.ReadLines("").Count();
+                Console.WriteLine("Number of lines are " + counter);
             }
         }
         public int FindNumberOfBlankSpaces(string line)
